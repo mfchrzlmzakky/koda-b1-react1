@@ -55,12 +55,12 @@ const App = () => {
       <Umur /> <Asal /> <Kondisi />
       <Kondisi2 />
       <Udah /> */}
-      <div className="flex justify-center flex-col">
+      <div className="flex items-center justify-center flex-col">
         <p className="text-center my-2">Jumlah Klik: {count}x</p>
-        <button className="bg-blue-900 text-white rounded-full my-1 " onClick={tambah}>
+        <button className="w-40 bg-blue-900 text-white rounded-full my-1 " onClick={tambah}>
           Tambah
         </button>
-        <button className="bg-red-900 text-white rounded-full my-1" onClick={kurang} disabled={count === 0}>
+        <button className="w-40 bg-red-900 text-white rounded-full my-1" onClick={kurang} disabled={count === 0}>
           Kurang
         </button>
       </div>
