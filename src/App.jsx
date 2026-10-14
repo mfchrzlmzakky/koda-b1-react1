@@ -45,9 +45,9 @@ const App = () => {
     }
   }
   function kurang() {
-    if (count > 0) {
-      setCount(count - 1);
-    }
+    // if (count > 0) {
+    setCount(count - 1);
+    // }
   }
   return (
     <>
@@ -57,10 +57,10 @@ const App = () => {
       <Udah /> */}
       <div className="flex justify-center flex-col">
         <p className="text-center my-2">Jumlah Klik: {count}x</p>
-        <button className="inline-block bg-blue-900 text-white rounded-full my-1 size-auto" onClick={tambah}>
+        <button className="bg-blue-900 text-white rounded-full my-1 " onClick={tambah}>
           Tambah
         </button>
-        <button className="bg-red-900 text-white rounded-full my-1" onClick={kurang}>
+        <button className="bg-red-900 text-white rounded-full my-1" onClick={kurang} disabled={count === 0}>
           Kurang
         </button>
       </div>
